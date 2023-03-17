@@ -1,5 +1,5 @@
 export default {
-  corsOrigin: "http://localhost:3000",
+  corsOrigin: "https://vich.ngrok.io",
   port: 4000,
-  host: "localhost",
+  host: "ngrok.io",
 };

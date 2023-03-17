@@ -29,11 +29,7 @@ function SocketsProvider(props: any) {
   const [rooms, setRooms] = useState({});
   const [messages, setMessages] = useState([]);
 
-  useEffect(() => {
-    window.onfocus = function () {
-      document.title = "Chat app";
-    };
-  }, []);
+  window.addEventListener("DOMContentLoaded", () => document.title = "Bum Jeopardy")
 
   socket.on(EVENTS.SERVER.ROOMS, (value) => {
     setRooms(value);
